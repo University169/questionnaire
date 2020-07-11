@@ -25,12 +25,14 @@ SECRET_KEY = '!ltzt7-d$n!ka5jfujlnispiqy%chpo-m9y8wltt^mhe9__c#1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# '127.0.0.1', 'localhost', '.klimkov.pro'
 ALLOWED_HOSTS = []
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -105,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
@@ -118,3 +120,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static/'
